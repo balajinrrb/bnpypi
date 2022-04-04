@@ -1,4 +1,4 @@
-name: PyPi Package Scan
+name: PyPi Package Scanning
 
 on:
   push:
