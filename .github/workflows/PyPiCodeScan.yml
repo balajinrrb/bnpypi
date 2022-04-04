@@ -1,4 +1,4 @@
-name: PyPi Package Scanning
+name: PyPi Package Scan
 
 on:
   push:
@@ -85,8 +85,8 @@ jobs:
         asset_content_type: application/zip
 
   job2:
-    if: ${{ always }}
-    needs: job1
+    if: ${{ always() }}
+    needs: [job1]
     name: Curl PyPI Packaeg amqp
     runs-on: ubuntu-latest
     permissions:
